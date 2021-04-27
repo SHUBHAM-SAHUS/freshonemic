@@ -1,0 +1,21 @@
+.blue-bg {
+    background: #21283e;
+    color: #fff;
+}
+section .section-header, section .section-body {
+    width: 100%;
+    clear: both;
+    display: inline-block;
+}
+section .section-header .sec-heading.widgetheading {
+    font-size: 18px !important;
+    color: #fff;
+}
+.widget-section .topic-list h6.topic-title a {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.5;
+}
+.text-white{
+    color: #fff;
+}

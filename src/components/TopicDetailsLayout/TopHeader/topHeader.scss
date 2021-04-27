@@ -1,0 +1,38 @@
+#topheader.rounded-top {
+    border-top-left-radius: 15px!important;
+    border-top-right-radius: 15px!important;
+}
+.bg-img-top {
+    background-image: linear-gradient(to bottom, #268cbc, #2986ba, #2e80b7, #347ab5, #3a74b1, #3e6faf, #426aad, #4765aa, #4b60a8, #505aa5, #5654a2, #5b4e9e);
+    background-repeat: repeat-x;
+}
+.btn-outline-primary {
+    line-height: 25px;
+    font-size: 12px;
+    color: #21283e;
+    text-transform: uppercase;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-color: #2291BF;
+    border-width: 2px;
+}
+$white: #fff;
+.bg-white{
+    background: $white;
+}
+.font_12{
+    font-family: 12px;
+}
+.btn-round {
+    border-radius: 22px;
+}
+.dropdown_menu{
+    position: absolute;
+    transform: translate3d(857px, 46px, 0px);
+    top: 19px !important;
+    left: -172px !important;
+    will-change: transform;
+    width: 230px;
+}.font-semibold {
+    font-weight: 600 !important;
+}

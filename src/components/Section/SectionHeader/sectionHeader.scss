@@ -1,0 +1,27 @@
+.section-header{
+    width: 100%;
+    clear: both;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+.sec-heading{
+    color: #21283e;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    position: relative;
+}
+.tab-content>.active {
+    display: block;
+}
+// .tab-content>.tab-pane {
+//     display: none;
+// }
+.fade {
+    transition: opacity .15s linear;
+}
+.article-title{border-bottom: 1px solid #E4E7EE; padding-bottom:8px;display:inline-block;width:100%}
+.article-title h5{line-height:35px}
+.article-body{padding-top:25px; padding-bottom: 25px }
+.article-body p{color:#2d354d; font-size:16px; }
+.article-body h5{display:inline-block;width: 100%; margin-bottom:15px;font-size: 18px; }

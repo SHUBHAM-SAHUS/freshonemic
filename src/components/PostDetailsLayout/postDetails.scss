@@ -1,0 +1,34 @@
+.main{
+    background: #F3F4F6;
+}
+
+section {
+    clear: both;
+    margin-bottom: 20px;
+    width: 100%;
+    display: inline-block;
+}   
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}   
+section .section-body {
+    background: #fff;
+    border-radius: 15px;
+}
+section .section-header, section .section-body {
+    width: 100%;
+    clear: both;
+    display: inline-block;
+}

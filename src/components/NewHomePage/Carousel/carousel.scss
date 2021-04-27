@@ -1,0 +1,32 @@
+
+section .section-body {
+    background: #fff;
+    border-radius: 15px;
+}
+section .section-header, section .section-body {
+    width: 100%;
+    clear: both;
+    display: inline-block;
+}
+section .section-header {
+    margin-bottom: 18px;
+}
+
+.card-carousel{
+	width: 100%;
+	/* height: 300px; */
+	background-color:#F8F8FA;
+	color: #000;
+	margin: 0 5px;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.card-body p{font-size: 12px; line-height: 1.3;}
+.card-footer{background: #fff;color: black;}
+.react-carousel{
+    width: 100%;
+    display: block;
+}

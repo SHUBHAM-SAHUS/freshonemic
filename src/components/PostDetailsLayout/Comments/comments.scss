@@ -1,0 +1,7 @@
+.comment ul li a sup{top:-10px;left:10px;position: absolute;}
+.comment ul.coments-use{}
+.comment ul.coments-use li{float: left;padding: 0 15px;border-right: 1px solid #E0E0E0;color: #21283e;font-size: 18px;}
+.comment ul.coments-use li:last-child{border:none;padding-right: 0}
+.comment ul.coments-use li a{display: inline-block;float: left;position: relative;}
+.comment ul.coments-use li a > img{margin-right: 10px;}
+.comment ul.coments-use li span.total{display: inline-block;font-size: 18px;line-height: 30px;color: #21283e;}
