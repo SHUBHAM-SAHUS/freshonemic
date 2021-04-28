@@ -35,8 +35,17 @@
   }
   .fNTuIa:hover:enabled, .fNTuIa:focus:enabled {
     color: #fff;
-    background: linear-gradient(to bottom, #2392c0 0%, #2392c0 20%, #3181b6 71%, #397ab4 86%, #3a75af 100%);;
+    background: linear-gradient(to bottom, #2392c0 0%, #2392c0 20%, #3181b6 71%, #397ab4 86%, #3a75af 100%);
     box-shadow: 0 0 2px 0 #333;
 }
+button.rec-dot{
+  background-color: transparent;
+  box-shadow: transparent;
+}
 
-  
+button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+  box-shadow: transparent;
+}
+.rec-pagination{
+  display: none !important;
+}

@@ -1,0 +1,40 @@
+.verify_header{
+    width: 100%;
+}
+.verify_title{
+    position: relative;
+    font-size: 24px;
+    color: #21283e;
+    font-weight: 700;
+    text-align: center !important;
+}.verify_title span:after {
+    background-color: #D716A5;
+    padding: 0 20px;
+    content: " ";
+    position: absolute;
+    bottom: -7px;
+    width: 70%;
+    height: 3px;
+    left: 15%;
+}
+.verify_a{
+    color: #2291be;
+    text-decoration: underline;
+}
+.verify_a:hover{
+    color: #000;
+    text-decoration: none;
+}
+#verifyCode input {
+    margin: 0 5px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 45px;
+    border: solid #abb3ca;
+    box-shadow: none;
+    outline: none;
+    width: 13%;
+    transition: all .2s ease-in-out;
+    border-radius: 0;
+    border-width: 0px 0px 2px 0px;
+}

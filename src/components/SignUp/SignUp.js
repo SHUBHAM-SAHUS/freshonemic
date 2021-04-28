@@ -6,7 +6,7 @@ import signupBtn from 'assets/images/signup-btn.png'
 export const SignUp = () => {
     return (
         <>
-  <div className="signup_header">
+  <div className="signup_header pt-3">
     <h5 className="signup_title text-center" >
       <span className="">Sign Up</span></h5>          
   </div>
@@ -14,7 +14,7 @@ export const SignUp = () => {
     <form>
       <div className="form-group row">
         <div className="col-lg-6">
-          <label>Name Heelo</label>
+          <label>Name</label>
           <input type="text" name="name" className="form-control" placeholder="Enter your name" />
         </div>
         <div className="col-lg-6">
@@ -53,8 +53,8 @@ export const SignUp = () => {
       </div>
     </form>
   </div>
-  <div className="modal-footer">
-  </div>
+  {/* <div className="modal-footer">
+  </div> */}
 </>
 
     )

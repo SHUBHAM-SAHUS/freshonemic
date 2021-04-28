@@ -4,6 +4,9 @@ import "./landfingheader.scss"
 import logo from "../../../assets/images/logo.png"
 import CommonModal from 'components/shared/ui-components/common-modal'
 import { SignUp } from 'components/SignUp/SignUp'
+import { LoginPage } from 'components/LoginPage/LoginPage'
+import { ForgotPage } from 'components/ForgotPage/ForgotPage'
+import { VerifyPage } from 'components/VerifyPage/VerifyPage'
 
 export const LandingpageHeader = () => {
   let defaultForm = () => <div></div>;
@@ -32,7 +35,7 @@ export const LandingpageHeader = () => {
             <Nav.Link href="/" className="text-light" >Home</Nav.Link>
             <Nav.Link href="/" className="text-light">Contact</Nav.Link>
             <Nav.Link className="btn_header_landing ml-1 " onClick={() =>
-              handelModal(<div><SignUp/> </div>)
+              handelModal(<div><LoginPage/> </div>)
             } >signup</Nav.Link>
 
 

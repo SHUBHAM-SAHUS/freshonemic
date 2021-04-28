@@ -41,7 +41,7 @@ export const Navigation = () => {
             </NavDropdown>
             <Nav.Link href="#notification" className="nav_padding">< NotificationsIcon /></Nav.Link>
 
-            <NavDropdown className="nav_padding" title={<FaRegUser />} id="collasible-nav-dropdown">
+            <NavDropdown className="nav_padding" title={< FaRegUser />} id="collasible-nav-dropdown">
               <div className="profile_dropdown">
                 <h5 className="profile_header"><FaRegUser />&nbsp;My Station</h5>
                 <NavDropdown.Item href="#action/3.2"><img src={untitled1} alt />&nbsp;&nbsp;FAQ'S</NavDropdown.Item>

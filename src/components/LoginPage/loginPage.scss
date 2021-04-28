@@ -1,0 +1,41 @@
+.signin_main{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+.signin_header{
+    width: 100%;
+}
+.signin_title{
+    position: relative;
+    font-size: 24px;
+    color: #21283e;
+    font-weight: 700;
+    text-align: center !important;
+}.signin_title span:after {
+    background-color: #D716A5;
+    padding: 0 20px;
+    content: " ";
+    position: absolute;
+    bottom: -7px;
+    width: 74%;
+    height: 3px;
+    left: 13%;
+}
+.signin_a{
+    color: #2291be;
+    text-decoration: underline;
+}
+.signin_a:hover{
+    color: #000;
+    text-decoration: none;
+}
