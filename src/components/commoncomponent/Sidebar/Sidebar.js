@@ -7,6 +7,37 @@ import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 import {CgMenuLeft} from 'react-icons/cg'
+import { Container, Paper, Box, Typography,List,ListItem,ListItemText,ListItemIcon,Collapse} from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
+import PagesIcon from '@material-ui/icons/Pages';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100vw",
+    height: "100vh",
+    backgroundColor: theme.palette.grey[300],
+    paddingTop:theme.spacing(6),
+  },
+  sidebar:{
+    position:"fixed",
+    top:0,
+    left:0,
+    width:"30%",
+    height:"100%"
+  },
+
+  nesteditem:{
+     paddingLeft:theme.spacing(14)
+  }
+  
+}));
+
+
 
 const Nav = styled.div`
   background: transparent;
@@ -43,6 +74,12 @@ const SidebarWrap = styled.div`
 `;
 
 const Sidebar = () => {
+  const classes = useStyles();
+  const [open,setopen]= useState(false)
+  const [aboutt,setaboutt]= useState(false)
+  const [pagg,setpagg]= useState(false)
+  const [portt,setportt]= useState(false)
+  const [contt,setcontt]= useState(false)
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -60,9 +97,198 @@ const Sidebar = () => {
             <NavIcon to='#'>
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
-            {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
-            })}
+                
+            <List>
+      
+      <ListItem  button onClick={()=>setopen(!open)} >
+           <ListItemIcon>
+        <HomeIcon/>
+      </ListItemIcon>
+    
+       
+
+    <ListItemText  primary="Home"/>
+    <ListItemIcon>
+             <ArrowDropDownIcon/>
+      </ListItemIcon>
+    </ListItem >
+
+    <Collapse in={open}>
+           
+           <ListItem button className={classes.nesteditem}>
+             
+       <ListItemText  primary="two"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="three"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="four"/>
+       </ListItem >
+       </Collapse>
+
+   
+         
+    <List disabledPadding>
+      <ListItem button  onClick={()=>setaboutt(!aboutt)}>
+
+              <ListItemIcon>
+              <InfoIcon/>  
+
+              </ListItemIcon>
+
+       
+
+        <ListItemText >
+          About
+        </ListItemText>
+
+        <ListItemIcon>
+             <ArrowDropDownIcon/>
+      </ListItemIcon>
+
+      </ListItem>
+           
+      <Collapse in={aboutt}>
+           
+           <ListItem button className={classes.nesteditem}>
+             
+       <ListItemText  primary="two"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="three"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="four"/>
+       </ListItem >
+       </Collapse>
+
+
+      <ListItem button onClick={()=>setpagg(!pagg)} >
+
+     
+       <ListItemIcon>
+       <PagesIcon/>
+      </ListItemIcon>
+
+
+        <ListItemText >
+          Pages
+        </ListItemText>
+        <ListItemIcon>
+             <ArrowDropDownIcon/>
+      </ListItemIcon>
+      </ListItem>
+
+      <Collapse in={pagg}>
+           
+           <ListItem button className={classes.nesteditem}>
+             
+       <ListItemText  primary="two"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="three"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="four"/>
+       </ListItem >
+       </Collapse>
+
+
+      <ListItem button  onClick={()=>setportt(!portt)}>
+       
+    
+      <ListItemIcon>
+      <AccountCircleIcon/>
+      </ListItemIcon>
+
+
+     
+        <ListItemText>
+          Portfolio
+        </ListItemText>
+           
+      <ListItemIcon>
+             <ArrowDropDownIcon/>
+      </ListItemIcon>
+      </ListItem>
+      <Collapse in={portt}>
+           
+           <ListItem button className={classes.nesteditem}>
+             
+       <ListItemText  primary="two"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="three"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="four"/>
+       </ListItem >
+       </Collapse>
+
+
+    
+
+
+
+      <ListItem button  onClick={()=>setcontt(!contt)} >
+      <ListItemIcon>
+             <ContactMailIcon/>
+      </ListItemIcon>
+        <ListItemText>
+         Contact
+        </ListItemText>
+        <ListItemIcon>
+             <ArrowDropDownIcon/>
+      </ListItemIcon>
+      </ListItem>
+      <Collapse in={contt}>
+           
+           <ListItem button className={classes.nesteditem}>
+             
+       <ListItemText  primary="two"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="three"/>
+       </ListItem >
+       
+       <ListItem button className={classes.nesteditem}>
+       
+       <ListItemText  primary="four"/>
+       </ListItem >
+       </Collapse>
+
+
+    </List>
+
+     
+    
+
+    
+   
+       
+     </List>
+
+
+
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>

@@ -1,8 +1,32 @@
-import React from 'react';
+import React,{useState} from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
+import { Container, Paper, Box, Typography,List,ListItem,ListItemText,ListItemIcon,Collapse} from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100vw",
+    height: "100vh",
+    backgroundColor: theme.palette.grey[300],
+    paddingTop:theme.spacing(6),
+  },
+  sidebar:{
+    position:"fixed",
+    top:0,
+    left:0,
+    width:"30%",
+    height:"100%"
+  },
+
+  nesteditem:{
+     paddingLeft:theme.spacing(6)
+  }
+  
+}));
+
 
 export const SidebarData = [
   {

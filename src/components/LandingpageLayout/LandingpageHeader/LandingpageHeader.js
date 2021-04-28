@@ -24,8 +24,8 @@ export const LandingpageHeader = () => {
       <CommonModal open={state.open} handelClose={handelClose}>
         {form}
       </CommonModal>
-      <Navbar bg="dark" expand="lg">
-        <Navbar.Brand href="#home"> <img src={logo} /></Navbar.Brand>
+      <Navbar bg="dark" expand="lg px-2">
+        <Navbar.Brand href="/"> <img src={logo} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">

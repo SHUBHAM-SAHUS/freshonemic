@@ -30,13 +30,13 @@ import Sidebar from '../Sidebar/Sidebar';
   
     return (
     <>
- <nav className="navbar navbar-expand-lg navbar-light shadow" style={{"background":"#ffffff"}}>
-  <div className="container-fluid"> <a id="sidebarCollapse"> <Sidebar /> {/*<img src={collapsebtn} alt="img" className="mr-4" />*/} </a> <a href="/"> <img src={logo} alt="logo" /> </a>
+ <nav className="navbar navbar-expand-lg navbar-light shadow " style={{"background":"#ffffff"}}>
+  <div className="container-fluid "> <a id="sidebarCollapse "> <Sidebar /> {/*<img src={collapsebtn} alt="img" className="mr-4" />*/} </a> <a href="/"> <img src={logo} alt="logo" /> </a>
     
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <form className="form-inline my-2 my-lg-0 ml-auto search-form">
         <input className="form-control mr-sm-2 ml-auto" type="search" placeholder="Search" aria-label="Search..." />
-        <button className="search-btn my-2 my-sm-0" type="submit"> <img src={search} alt="pic" /> </button>
+        <button className="search-btn my-2 my-sm-0 " type="submit"> <img src={search} alt="pic" /> </button>
       </form>
       <ul className="nav navbar-nav ml-auto" >
         <li className="nav-item active dropdown "> <a className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" > <img src={dropdownsearch} alt="pic" /> </a> 

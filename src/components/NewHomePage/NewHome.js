@@ -10,11 +10,14 @@ import banner3 from 'assets/images/banner-3.jpg';
 import { RightSidebar } from './RightSidebar/RightSidebar';
 import { InviteCard } from 'components/HomepageLayout/InviteCard/InviteCard';
 import { SideAdvertisement } from 'components/HomepageLayout/Sisebaraddvertisement/SideAdvertisement';
+import { Navigation } from 'components/commoncomponent/Navigation/Navigation';
+import { Footer } from 'components/commoncomponent/FooterLayout/Footer';
 
 
 const NewHome = () => {
     return (
         <div>
+            <Navigation/>
             <section className="main">
                 <div className="container-fluid">
                     <div className="row ">
@@ -58,7 +61,9 @@ const NewHome = () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </div>
+
     )
 }
 

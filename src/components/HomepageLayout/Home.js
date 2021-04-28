@@ -9,12 +9,15 @@ import { InviteCard } from './InviteCard/InviteCard'
 import { SideAdvertisement } from './Sisebaraddvertisement/SideAdvertisement'
 import { Post } from 'components/PostDetailsLayout/Post/Post'
 import { Comments } from 'components/PostDetailsLayout/Comments/Comments'
+import { Navigation } from 'components/commoncomponent/Navigation/Navigation'
+import { Footer } from 'components/commoncomponent/FooterLayout/Footer'
 
 
 
 export const Home = () => {
     return (
         <div>
+            <Navigation/>
             <div className="mt-5">
                 <div className="row no-gutters">
                     <div className="col-md-9">
@@ -27,7 +30,7 @@ export const Home = () => {
                         </div>
                         <SocialFeedBack />
                         <SponcerLayout />
-
+ 
 
                     </div>
                     <div className="col-md-3">
@@ -43,7 +46,7 @@ export const Home = () => {
             </div>
 
 
-
+ <Footer/>
         </div>
     )
 }

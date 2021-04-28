@@ -16,11 +16,11 @@ export const PublicRouterLayout = ({ children }) => (
     </div>
     <strong className="mx-auto"></strong>
     {/* <Header/> */}
-    <Navigation/>
+    {/* <Navigation/> */}
 
     {/* <NavbarLayout /> */}
     {children}
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 

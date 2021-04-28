@@ -20,7 +20,7 @@ export const publicRoutes = [
   // },
   {
     key: "newhome",
-    path: "/",
+    path: "/home",
     component: NewHome,
     exact: true,
   },
@@ -52,7 +52,7 @@ export const publicRoutes = [
 
   {
     key: "landding",
-    path: "/landing",
+    path: "/",
     component: LandingPageLayout ,
     exact: true,
   },
