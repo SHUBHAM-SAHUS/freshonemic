@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Navbar, Nav, Form, Button } from "react-bootstrap"
+ import {LinkContainer} from "react-router-bootstrap"                                                        
+import {Link} from "react-router-dom"
 import "./landfingheader.scss"
 import logo from "../../../assets/images/logo.png"
 import CommonModal from 'components/shared/ui-components/common-modal'
@@ -29,17 +31,22 @@ export const LandingpageHeader = () => {
       <CommonModal open={state.open} handelClose={handelClose}>
         {form}
       </CommonModal>
-      <Navbar bg="dark" expand="lg px-2">
+      <Navbar bg="dark" expand="lg px-3 fixed-top ">
         <Navbar.Brand href="/"> <img src={logo} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="/" className="text-light" >Home</Nav.Link>
-            <Nav.Link href="/" className="text-light">Contact</Nav.Link>
-            <Nav.Link className="btn_header_landing ml-1 " onClick={() =>
+            <LinkContainer to="/home">
+            <Nav.Link  className="text_light mx-3" style={{color:"red"}} >Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/">
+            <Nav.Link href="/" className="text_light mx-3">Contact</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/">
+            <Nav.Link className="btn_header_landing mx-3 " onClick={() =>
               handelModal(<div> <TabComponent/>  </div>)
             } >signup</Nav.Link>
-               
+               </LinkContainer>
               
 
 

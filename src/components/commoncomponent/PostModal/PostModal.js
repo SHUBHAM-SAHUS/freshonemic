@@ -5,6 +5,7 @@ import { Dropdown } from 'react-bootstrap';
 import choose from 'assets/images/choose.png';
 import topicIcon from 'assets/images/topic-icon2.png'
 import voiceImage from 'assets/images/voice-image.png'
+import {Link} from "react-router-dom"
 
 export const PostModal = () => {
 
@@ -122,7 +123,7 @@ export const PostModal = () => {
                                 <div className="col-6 pl-5">
                                     <div className="mt-4">
                                         <button type="button" className="btn prm-btn btn-round font-12 mr-1" onClick={handleClose}>POST</button>
-                                        <button type="button" className="btn btn-outline-primary btn-round font-12">SAVE DRAFT</button>
+                                        <button type="button" className="btn btn-outline-primary btn-round font-12">  SAVE DRAFT   </button>
                                     </div>
                                 </div>
                             </div>

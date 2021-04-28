@@ -10,7 +10,7 @@ import blacktwo from "../../../assets/images/blacktwo.jpg"
     return (
         <>
 
-        <div className="bg-dark ">
+        <div className="bg-dark mt-4">
         <Carousel fade>
   <Carousel.Item interval={500}>
 

@@ -19,7 +19,7 @@ export const Navigation = () => {
   return (
     <div className="">
 
-      <Navbar collapseOnSelect expand="lg" className="shadow">
+      <Navbar collapseOnSelect expand="lg" className="shadow px-3">
         <Sidebar />
         <Navbar.Brand href="#home"> <img className="nav_logo" src={logo} alt="logo" /> </Navbar.Brand>
         <form className="form-inline my-2 my-lg-0 search-form">
