@@ -122,8 +122,8 @@ export const PostModal = () => {
                                 </div>
                                 <div className="col-6 pl-5">
                                     <div className="mt-4">
-                                        <button type="button" className="btn prm-btn btn-round font-12 mr-1" onClick={handleClose}>POST</button>
-                                        <button type="button" className="btn btn-outline-primary btn-round font-12">  SAVE DRAFT   </button>
+                                       <Link to="post-details"> <button type="button" className="btn prm-btn btn-round font-12 mr-1" >POST</button></Link>
+                                        <button type="button" className="btn btn-outline-primary btn-round font-12" onClick={handleClose}>  SAVE DRAFT   </button>
                                     </div>
                                 </div>
                             </div>

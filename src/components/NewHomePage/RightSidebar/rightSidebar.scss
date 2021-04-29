@@ -18,4 +18,15 @@ section .section-header .sec-heading.widgetheading {
 }
 .text-white{
     color: #fff;
+    font-size: 18px !important;
+}
+.underline_rsidebar::after{
+    background-color: #D716A5;
+    padding: 0 20px;
+    content: " ";
+    position: absolute;
+    bottom: -7px;
+    width: 53%;
+    height: 3px;
+    left: 0%;
 }

@@ -15,11 +15,28 @@
     padding-right: 1rem !important;
     color: #000 !important;
 }
-.navbar-light .navbar-nav .nav-link {
-    color: #000 !important;
-    font-size: 16px;
-    text-transform: uppercase;
+.nav_padding svg{
+    color: #000;
 }
+.rm-btn {
+    background: #2392c0;
+    background: linear-gradient(to bottom, #2392c0 0%, #2392c0 20%, #3181b6 71%, #397ab4 86%, #3a75af 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2392c0', endColorstr='#3a75af',GradientType=0 );
+    text-transform: uppercase;
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 42px;
+    padding: 0 27px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+}
+/* // .navbar-light .navbar-nav .nav-link {
+//     color: #000 !important;
+//     font-size: 16px;
+//     text-transform: uppercase;
+// } */
 .profile_dropdown{
     right: 0;
     left: inherit;

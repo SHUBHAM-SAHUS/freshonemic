@@ -6,6 +6,7 @@ import { TopicDetails } from "components/TopicDetailsLayout/TopicDetails";
 import { SectionDownvoted } from "components/SectionDownvoted/SectionDownvoted"
 import { LandingPageLayout } from "components/LandingpageLayout/LandingPageLayout";
 import { UserSignupPage } from "components/Signuppage/UserSignupPage";
+import { VerifyPage } from "components/VerifyPage/VerifyPage";
 
 <UserSignupPage/>
 
@@ -62,7 +63,7 @@ export const publicRoutes = [
     path: "/signup",
     component: UserSignupPage,
     exact: true,
-  }
+  },
 
 
 

@@ -5,10 +5,13 @@ import '../Section/section.scss';
 import { Comments } from 'components/PostDetailsLayout/Comments/Comments';
 import loading from 'assets/images/loading.png'
 import { SectionDownvotedHeader } from './SectionDownvotedHeader/SectionDownvotedHeader';
+import { Footer } from 'components/commoncomponent/FooterLayout/Footer';
+import { Navigation } from 'components/commoncomponent/Navigation/Navigation';
 
 export const SectionDownvoted = () => {
     return (
-
+<>
+<Navigation/>
         <section className="main">
             <div className="container-fluid">
                 <div className="row">
@@ -43,5 +46,7 @@ export const SectionDownvoted = () => {
 
                 </div>
         </section>
+<Footer/>
+        </>
     )
 }

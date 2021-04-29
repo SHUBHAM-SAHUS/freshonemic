@@ -11,6 +11,16 @@ section .section-header, section .section-body {
 section .section-header {
     margin-bottom: 18px;
 }
+.underline_carousel:after{
+	background-color: #D716A5;
+    padding: 0 20px;
+    content: " ";
+    position: absolute;
+    bottom: -7px;
+    width: 53%;
+    height: 3px;
+    left: 0%;
+}
 
 .card-carousel{
 	width: 100%;

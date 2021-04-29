@@ -16,12 +16,12 @@ export const TopicPostThree = () => {
             </div>
             <div className="article-body">
                 <h5>I Totally agree </h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a className="font-pink" href="#"><small>more...</small></a></p>
-                <p className="author">Posted by <a href="#">James_007 </a>2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a className="font-pink" href ="/"><small>more...</small></a></p>
+                <p className="author">Posted by <a href ="/">James_007 </a>2 hours ago</p>
                 {/**/}
-                <div className="tags mb-4"> <a href="#" className="btn btn-tags selected mr-1"> #COLLEGE </a> <a href="#" className="btn btn-tags mr-1"> #EDUCATION </a> <a href="#" className="btn btn-tags mr-1"> #SCHOOL </a> <a href="#" className="btn btn-language float-right"> English </a> </div>
+                <div className="tags mb-4"> <a href ="/" className="btn btn-tags selected mr-1"> #COLLEGE </a> <a href ="/" className="btn btn-tags mr-1"> #EDUCATION </a> <a href ="/" className="btn btn-tags mr-1"> #SCHOOL </a> <a href ="/" className="btn btn-language float-right"> English </a> </div>
                 {/*//*/}
-                <div className="popup-images justify-content-start"> <a href="#" className="m-1"> <img src={widgetOne} className="brd-rounded5 mb-2" /> </a> <a href="#" className="m-1"> <img src={widgetTwo} className="brd-rounded5 mb-2" /> </a> <a href="#" className="m-1"> <img src={widgetThree} className="brd-rounded5 mb-2" /> </a> <a href="#" className="m-1"> <img src={widgetFour} className="brd-rounded5 mb-2" /> </a> </div>
+                <div className="popup-images justify-content-start"> <a href ="/" className="m-1"> <img src={widgetOne} className="brd-rounded5 mb-2" /> </a> <a href ="/" className="m-1"> <img src={widgetTwo} className="brd-rounded5 mb-2" /> </a> <a href ="/" className="m-1"> <img src={widgetThree} className="brd-rounded5 mb-2" /> </a> <a href ="/" className="m-1"> <img src={widgetFour} className="brd-rounded5 mb-2" /> </a> </div>
             </div>
         </div>
     </div>

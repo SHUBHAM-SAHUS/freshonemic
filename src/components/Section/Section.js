@@ -5,10 +5,13 @@ import { SectionRightSideBar } from './SectionRightSideBar/SectionRightSideBar'
 import './section.scss';
 import { Comments } from 'components/PostDetailsLayout/Comments/Comments';
 import loading from 'assets/images/loading.png'
+import { Footer } from 'components/commoncomponent/FooterLayout/Footer';
+import { Navigation } from 'components/commoncomponent/Navigation/Navigation';
 
 export const Section = () => {
     return (
-
+<>
+<Navigation/>
         <section className="main">
             <div className="container-fluid">
                 <div className="row">
@@ -43,5 +46,7 @@ export const Section = () => {
 
                 </div>
         </section>
+        <Footer/>
+        </>
     )
 }

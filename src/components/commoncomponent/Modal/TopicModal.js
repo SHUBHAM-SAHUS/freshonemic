@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
-import { Modal, Button} from "react-bootstrap";
+import { Modal, Button } from "react-bootstrap";
 import './TopicModal.scss'
+import {Link} from "react-router-dom"
+import { Navigation } from '../Navigation/Navigation';
+import { Footer } from '../FooterLayout/Footer';
+
 // import { Dropdown } from 'react-bootstrap';
 // import choose from 'assets/images/choose.png';
 // import topicIcon from 'assets/images/topic-icon2.png'
@@ -24,18 +28,19 @@ export const TopicModal = () => {
                     <Modal.Title><h5 className="title title-border">Create Post</h5></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                                      
+
 
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
           </Button>
-                    <Button variant="primary" onClick={handleClose}>
+                    <Link to="/topic-details"><Button variant="primary" onClick={handleClose}>
                         Save Changes
-          </Button>
+          </Button></Link>
                 </Modal.Footer>
-            </Modal>
+            </Modal>            
         </div>
+        
     )
 }

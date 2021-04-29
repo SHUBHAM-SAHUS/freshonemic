@@ -8,9 +8,13 @@ import { TopicPostThree } from './TopicPostThree/TopicPostThree';
 import SidebarDetails from 'components/HomepageLayout/SisebarDetails/SidebarDetails';
 import { InviteCard } from 'components/HomepageLayout/InviteCard/InviteCard';
 import { SideAdvertisement } from 'components/HomepageLayout/Sisebaraddvertisement/SideAdvertisement';
+import { Footer } from 'components/commoncomponent/FooterLayout/Footer';
+import { Navigation } from 'components/commoncomponent/Navigation/Navigation';
 
 export const TopicDetails = () => {
     return (
+        <>
+        <Navigation/>
         <section className="main">
             <div className="container-fluid">
                 <div className="row">
@@ -62,5 +66,7 @@ export const TopicDetails = () => {
                 </div>
             </div>            
         </section>
+        <Footer/>
+        </>
     )
 }

@@ -17,8 +17,8 @@ export const TopHeader = () => {
                 </div>
                 <div className="col-md-10 col-12">
                     <span className="float-right pt-3">
-                        <a href="#" className="btn btn-round btn-outline-primary bg-white font_12 mr-2"> <b>Follow</b></a>
-                        <a href="#"><img src={whiteCircleBtn} alt className="ml-3" /></a>
+                        <a href ="/" className="btn btn-round btn-outline-primary bg-white font_12 mr-2"> <b>Follow</b></a>
+                        <a href ="/"><img src={whiteCircleBtn} alt className="ml-3" /></a>
                         {/* User Dropdown */}
                         <Dropdown>
                             <Dropdown.Toggle className="dropdown-btn" id="dropdown-basic">

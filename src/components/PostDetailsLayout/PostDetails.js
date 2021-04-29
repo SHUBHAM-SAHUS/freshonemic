@@ -6,10 +6,16 @@ import './postDetails.scss'
 import SidebarDetails from 'components/HomepageLayout/SisebarDetails/SidebarDetails'
 import { InviteCard } from 'components/HomepageLayout/InviteCard/InviteCard'
 import { SideAdvertisement } from 'components/HomepageLayout/Sisebaraddvertisement/SideAdvertisement'
+import { Footer } from 'components/commoncomponent/FooterLayout/Footer'
+import { Header } from 'components/commoncomponent/HeaderLayout/Header'
+import { Navigation } from 'components/commoncomponent/Navigation/Navigation'
+
 
 
 export const PostDetails = () => {
     return (
+        <>
+        <Navigation/>
         <section className="main">
             <div className="container-fluid">
                 <div className="row">
@@ -44,6 +50,7 @@ export const PostDetails = () => {
                 </div>
             </div>
         </section>
-
+        <Footer/>
+</>
     )
 }

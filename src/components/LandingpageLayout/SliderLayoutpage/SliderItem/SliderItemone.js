@@ -1,5 +1,5 @@
 import React from 'react'
-import "./sliderstyle.scss"
+import "./sliderstyle.css"
 import backgroundone from "../../../../assets/images/black.jpg"
 
 export const SliderItemone = (props) => {

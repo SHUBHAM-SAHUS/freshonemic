@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, NavDropdown, Nav } from "react-bootstrap"
 import logo from "../../../assets/images/logo.png"
-import "./navigation.scss";
+import "./navigation.css";
 import './mediaNavigation.scss'
 import { FaRegUser } from "react-icons/fa"
 import Sidebar from '../Sidebar/Sidebar';
@@ -19,7 +19,7 @@ export const Navigation = () => {
   return (
     <div className="">
 
-      <Navbar collapseOnSelect expand="lg" className="shadow px-3">
+      <Navbar collapseOnSelect expand="lg" className="shadow">
         <Sidebar />
         <Navbar.Brand href="#home"> <img className="nav_logo" src={logo} alt="logo" /> </Navbar.Brand>
         <form className="form-inline my-2 my-lg-0 search-form">
@@ -41,7 +41,7 @@ export const Navigation = () => {
             </NavDropdown>
             <Nav.Link href="#notification" className="nav_padding">< NotificationsIcon /></Nav.Link>
 
-            <NavDropdown className="nav_padding" title={< FaRegUser />} id="collasible-nav-dropdown">
+            <NavDropdown className="nav_padding" title={<FaRegUser />} id="collasible-nav-dropdown">
               <div className="profile_dropdown">
                 <h5 className="profile_header"><FaRegUser />&nbsp;My Station</h5>
                 <NavDropdown.Item href="#action/3.2"><img src={untitled1} alt />&nbsp;&nbsp;FAQ'S</NavDropdown.Item>
