@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Navbar, Nav, Form, Button } from "react-bootstrap"
  import {LinkContainer} from "react-router-bootstrap"                                                        
 import {Link} from "react-router-dom"
-import "./landfingheader.scss"
+import "./landfingheader.css"
 import logo from "../../../assets/images/logo.png"
 import CommonModal from 'components/shared/ui-components/common-modal'
 import { SignUp } from 'components/SignUp/SignUp'
@@ -32,6 +32,10 @@ export const LandingpageHeader = () => {
         {form}
       </CommonModal>
       <Navbar bg="dark" expand="lg px-3 fixed-top ">
+         
+
+
+
         <Navbar.Brand href="/"> <img src={logo} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
