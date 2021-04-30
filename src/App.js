@@ -8,7 +8,7 @@ import storage from "utils/storage";
 import { makeStyles } from '@material-ui/core/styles';
 import Alert from '@material-ui/lab/Alert';
 import FacebookLogin from 'react-facebook-login';
-import "./App.css";
+// import "./App.css";
 
 
 
