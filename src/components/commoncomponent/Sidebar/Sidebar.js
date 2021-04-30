@@ -89,13 +89,13 @@ const Sidebar = () => {
       <IconContext.Provider value={{ color: '#000' }}>
         <Nav>
           <NavIcon to='#'>
-            <CgMenuLeft onClick={showSidebar} />
+            <CgMenuLeft className="sidebar_icon" onClick={showSidebar} />
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <NavIcon to='#'>
-              <AiIcons.AiOutlineClose onClick={showSidebar} />
+              <AiIcons.AiOutlineClose className="sidebar_close" onClick={showSidebar} />
             </NavIcon>
                 
             <List>

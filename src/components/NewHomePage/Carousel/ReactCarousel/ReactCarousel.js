@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Carousel from "react-elastic-carousel";
 import {Item} from "./Item";
-import "./reactCarousel.scss";
+import './reactCarousel.scss';
+import './mediareactCarousel.scss'
 
 const breakPoints = [
   { width: 320, itemsToShow: 1 },

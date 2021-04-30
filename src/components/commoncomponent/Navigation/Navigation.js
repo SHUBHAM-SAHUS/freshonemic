@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, NavDropdown, Nav } from "react-bootstrap"
 import logo from "../../../assets/images/logo.png"
-import "./navigation.css";
+import "./navigation.scss";
 import './mediaNavigation.scss'
 import { FaRegUser } from "react-icons/fa"
 import Sidebar from '../Sidebar/Sidebar';

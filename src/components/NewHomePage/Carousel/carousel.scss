@@ -21,6 +21,14 @@ section .section-header {
     height: 3px;
     left: 0%;
 }
+.carousel_a a{
+    color: #D716A5;
+    font-weight: 400;
+    text-decoration: none;
+}
+.carousel_a a:hover{
+    text-decoration: none;
+}
 
 .card-carousel{
 	width: 100%;

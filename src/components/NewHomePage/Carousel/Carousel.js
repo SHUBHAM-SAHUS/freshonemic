@@ -10,7 +10,7 @@ const Carousel = () => {
         <section>
             <div className="section-header">
                 <h2 className="sec-heading float-left underline_carousel">Newly Added Topics</h2>
-                <small className="float-right"> <a href ="/">View all</a> </small>
+                <small className="float-right carousel_a"> <a href ="/">View all</a> </small>
                 <div className="react-carousel">
                      <ReactCarousel/>
                 </div>

@@ -5,7 +5,7 @@ import commentIcon from '../../../assets/images/icon-comment.png';
 import forwardIcon from '../../../assets/images/icon-forward.png';
 import pinIcon from '../../../assets/images/icon-pin.png';
 import flagIcon from '../../../assets/images/icon-flag.png';
-import musicIcon from 'assets/images/icon-music.png';
+import musicIcon from 'assets/images/icon-music-1.png';
 import './comments.scss';
 
 export const Comments = () => {

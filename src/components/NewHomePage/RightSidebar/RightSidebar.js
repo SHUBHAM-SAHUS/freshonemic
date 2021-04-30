@@ -11,7 +11,7 @@ export const RightSidebar = () => {
             <section>
               <div className="section-header">
                 <h2 className="sec-heading widget-heading text-white underline_rsidebar float-left">Top Rated Topics</h2>
-                <small className="float-right"> <a href ="/">View all</a> </small> </div>
+                <small className="float-right rigt_sidebar_a"> <a href ="/">View all</a> </small> </div>
               <div className="topic-list">
                 <ul className="list-unstyled">
                   <li>

@@ -3,6 +3,7 @@ import Carousel from './Carousel/Carousel';
 import Filter from './Filter/Filter';
 import './newHome.scss';
 import { HomePost } from './HomePost/HomePost'
+
 import { Comments } from 'components/PostDetailsLayout/Comments/Comments';
 import { Post } from 'components/PostDetailsLayout/Post/Post';
 import banner2 from 'assets/images/banner-2.jpg';

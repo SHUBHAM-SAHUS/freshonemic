@@ -12,7 +12,7 @@ import dropdowncross from "assets/images/dropdown-cross-btn.png" ;
                 <h5>Why Colleges now imposing uniforms? <a href ="/" className="btn btn-round prm-btn font-12 mr-2 float-right">Follow</a> </h5>
             </div>
             <div className="article-body">
-                <h5>I Totally agree <a className="btn btn-outline-primary btn-round font-12 float-right create-post"><img className="dropdowncross" src={dropdowncross} alt="add"/> &nbsp; Create Post</a> </h5>
+                <h5>I Totally agree <a className="btn btn_home_create btn-round font-12 float-right create-post"><img className="dropdowncross" src={dropdowncross} alt="add"/> &nbsp; Create Post</a> </h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a className="font-pink" href="#"><small>more...</small></a></p>
                 <p className="author">Posted by <a href ="/">James_007 </a>2 hours ago</p>
                 {/**/}
