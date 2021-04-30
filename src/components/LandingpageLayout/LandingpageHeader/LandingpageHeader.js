@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Navbar, Nav, Form, Button } from "react-bootstrap"
  import {LinkContainer} from "react-router-bootstrap"                                                        
 import {Link} from "react-router-dom"
-import "./landfingheader.css"
+import "./landfingheader.scss"
 import logo from "../../../assets/images/logo.png"
 import CommonModal from 'components/shared/ui-components/common-modal'
 import { SignUp } from 'components/SignUp/SignUp'
@@ -49,7 +49,7 @@ export const LandingpageHeader = () => {
             <LinkContainer to="/">
             <Nav.Link className="btn_header_landing mx-3 " onClick={() =>
               handelModal(<div> <TabComponent/>  </div>)
-            } >signup</Nav.Link>
+            } >signin</Nav.Link>
                </LinkContainer>
               
 
