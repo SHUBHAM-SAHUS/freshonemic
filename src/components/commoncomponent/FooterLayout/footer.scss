@@ -6,7 +6,19 @@
 // footer ul li a{font-size:13px; color: #E1E4EC; line-height:25px }
 
 .mainfooter{
-    background: #21283E; padding-top: 25px; padding-bottom: 25px;color: #E1E4EC;font-size:14px 
+    background: #1A1F33; padding-top: 25px; padding-bottom: 25px;color: #E1E4EC;font-size:14px 
+}
+.footer_copyright{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+.footer_copyright a{
+    color: #2391bf;
+}.footer_color{
+    background: #1A1F33 !important;
 }
 
 .footer_ul{

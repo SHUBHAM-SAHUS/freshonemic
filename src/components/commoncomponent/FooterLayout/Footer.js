@@ -7,15 +7,15 @@ export const Footer = () => {
     return (
         <>
       <footer className="mainfooter ">
-  <div className="container-fluid">
-    <div className="row clearfix">
+  <div className="container-fluid ">
+    <div className="row clearfix footer_color">
       <div className="col-md-3"> <a href="#"> <img src={footerlogo} alt="footerlogo" /> </a>
         <div className="copy-right mt-2">
-          <p>Copyright @ 2021. <a href="#">Storiyoh</a>.  All rights reserved</p>
+          <p className="footer_copyright">Copyright @ 2021. <a href="#">Storiyoh</a>.  All rights reserved</p>
         </div>
       </div>
       <div className="col-md-6">
-        <div className="row clearfix">
+        <div className="row clearfix footer_color">
           <div className="col-md-4">
             <ul className="footer_ul">
               <li><a   className="footer_li_a"  >About Storiyoh OneMic</a></li>

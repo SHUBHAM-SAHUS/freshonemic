@@ -32,9 +32,6 @@ export const LandingpageHeader = () => {
         {form}
       </CommonModal>
       <Navbar bg="dark" expand="lg px-3 fixed-top ">
-         
-
-
 
         <Navbar.Brand href="/"> <img src={logo} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -47,13 +44,10 @@ export const LandingpageHeader = () => {
             <Nav.Link href="/" className="text_light mx-3">Contact</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/">
-            <Nav.Link className="btn_header_landing mx-3 " onClick={() =>
+            <Nav.Link className="btn_header_landing mx-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-3" onClick={() =>
               handelModal(<div> <TabComponent/>  </div>)
-            } >SIGN IN</Nav.Link>
+            }>SIGN IN</Nav.Link>
                </LinkContainer>
-              
-
-
           </Nav>
 
         </Navbar.Collapse>
