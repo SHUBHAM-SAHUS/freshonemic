@@ -1,5 +1,6 @@
 {
   "name": "humlog_frontend_phase2",
+  "homepage": "https://SHUBHAM-SAHUS.github.io/freshonemic",
   "version": "0.1.0",
   "proxy": "https://localhost:3000",
   "private": true,
@@ -14,6 +15,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.3",
+    "gh-pages": "^3.1.0",
     "material-ui-popup-state": "^1.7.1",
     "moment": "^2.26.0",
     "node-sass": "^4.14.1",
@@ -66,6 +68,8 @@
     "workbox-streams": "^5.1.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

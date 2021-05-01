@@ -14,10 +14,10 @@ import './sectionRightSideBar.scss';
 
 export const SectionRightSideBar = () => {
     return (
-        <div className="col-md-2">
+        <div className="col-md-12">
             <div className="row">
-                <div className="widget-section blue-bg col-md-12 pt-4">
-                    <section>
+                <div className="widget-section blue-bg col-md-12 pt-4 ">
+                    <section className="px-2">
                         <ul className="list-unstyled">
                             <li className="pb-4 pt-4"><a className="section_color" href="#"><img src={p1} alt />&nbsp;&nbsp;&nbsp; My Station </a> </li>
                             <li className="pb-4 pb-4"><a className="section_color" href="#"><img src={p2} alt />&nbsp;&nbsp;&nbsp; Analytics </a></li>

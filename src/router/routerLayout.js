@@ -5,7 +5,6 @@ import { NavbarLayout } from "components/commoncomponent/NavbarLayout/NavbarLayo
 import { Navigation } from "components/commoncomponent/Navigation/Navigation.js";
 
 
-
 import App from "../App.js";
 // import logo from "assets/images/thumbnails/cloud.svg";
 

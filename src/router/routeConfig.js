@@ -7,6 +7,7 @@ import { SectionDownvoted } from "components/SectionDownvoted/SectionDownvoted"
 import { LandingPageLayout } from "components/LandingpageLayout/LandingPageLayout";
 import { UserSignupPage } from "components/Signuppage/UserSignupPage";
 import { VerifyPage } from "components/VerifyPage/VerifyPage";
+import { Recommendations } from "componenttwo/RecomendationLayout/recommendationmainpage/Recommendations";
 
 <UserSignupPage/>
 
@@ -64,6 +65,15 @@ export const publicRoutes = [
     component: UserSignupPage,
     exact: true,
   },
+
+   
+  {
+    key: "recommended",
+    path: "/recommendations",
+    component: Recommendations,
+    exact: true,
+  },
+
 
 
 

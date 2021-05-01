@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme) => ({
     border: 'none',
     boxShadow: theme.shadows[5],
     maxWidth : '500px',
-    width : '95%',
-    padding: theme.spacing(2, 4, 3),
+    width : '90%',
+    padding: theme.spacing(1, 1, 1),
     '&:focus': {
       outline: 'none',
     }

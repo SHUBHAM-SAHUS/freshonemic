@@ -8,6 +8,8 @@ import Box from '@material-ui/core/Box';
 import TabsUI from "components/shared/ui-components/TabsUI";
 import { LoginPage } from "components/LoginPage/LoginPage";
 import { SignUp } from "components/SignUp/SignUp";
+import { ForgotPage } from "components/ForgotPage/ForgotPage";
+import { VerifyPage } from "components/VerifyPage/VerifyPage";
 
  
 function TabPanel(props) {
@@ -41,6 +43,7 @@ function a11yProps(index) {
 }
 
 
+
 export const TabComponent=()=>{
 
   const [value, setValue] = React.useState(1);
@@ -51,12 +54,16 @@ export const TabComponent=()=>{
         
     'Sign up ',
     'Sign In',
+    'forgot password',
+    'veryfy otp',
   
     
   ];
   const tabs = {
     0: <SignUp/>,
     1:  <LoginPage/>,
+    2: <ForgotPage/>,
+    3: <VerifyPage/>
    
   };
 

@@ -14,10 +14,20 @@ import iconLogout from 'assets/images/icon-logout.png';
 import search from "../../../assets/images/search-btn.png"
 import { TopicModal } from '../Modal/TopicModal'
 import { PostModal } from '../PostModal/PostModal'
+import { useLocation,useHistory } from "react-router-dom"
 
 export const Navigation = () => {
+  const location = useLocation();
+  const history = useHistory();
   return (
+         
+       
+
     <div className="">
+       
+       {location.pathname === `/landing` ? (
+               <div> vhvh</div>
+              ) : 
 
       <Navbar collapseOnSelect expand="lg" className="shadow">
         <Sidebar />
@@ -56,7 +66,7 @@ export const Navigation = () => {
       </Navbar>
 
 
-
+       }
     </div>
   )
 }

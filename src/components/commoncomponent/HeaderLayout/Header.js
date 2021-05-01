@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import collapsebtn from "../../../assets/images/collapse-btn.png"
 import Untitled from "../../../assets/images/Untitled-1.png"
 import help from "../../../assets/images/icon--help.png"
-import setting from "../../../assets/images/icon-setting.png"
+import setting from "../../../assets/images/icon-setting.png"   
 import logout from "../../../assets/images/icon-logout.png"
 import search from "../../../assets/images/search-btn.png"
 import dropdownsearch from "../../../assets/images/dropdown-cross-btn.png"
@@ -30,7 +30,7 @@ import Sidebar from '../Sidebar/Sidebar';
   
     return (
     <>
- <nav className="navbar navbar-expand-lg navbar-light shadow " style={{"background":"#ffffff"}}>
+ <nav className="navbar navbar-expand-lg navbar-light shadow fixed-top " style={{"background":"#ffffff"}}>
   <div className="container-fluid "> <a id="sidebarCollapse "> <Sidebar /> {/*<img src={collapsebtn} alt="img" className="mr-4" />*/} </a> <a href="/"> <img src={logo} alt="logo" /> </a>
     
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
