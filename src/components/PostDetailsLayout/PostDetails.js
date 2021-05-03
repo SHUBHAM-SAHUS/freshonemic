@@ -9,6 +9,7 @@ import { SideAdvertisement } from 'components/HomepageLayout/Sisebaraddvertiseme
 import { Footer } from 'components/commoncomponent/FooterLayout/Footer'
 import { Header } from 'components/commoncomponent/HeaderLayout/Header'
 import { Navigation } from 'components/commoncomponent/Navigation/Navigation'
+import { RightSidebar } from 'components/NewHomePage/RightSidebar/RightSidebar'
 
 
 
@@ -42,7 +43,7 @@ export const PostDetails = () => {
                     </div>
                     {/* Right Sidebar */}
                     <div className="col-md-3">
-                    <SidebarDetails/>
+                    <RightSidebar/>
                     <InviteCard/>
                     <SideAdvertisement/>
                     </div>

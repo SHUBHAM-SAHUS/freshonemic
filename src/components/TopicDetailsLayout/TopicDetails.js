@@ -5,11 +5,11 @@ import { TopicPost } from './TopicPost/TopicPost';
 import { Comments } from 'components/PostDetailsLayout/Comments/Comments';
 import { TopicPostTwo } from './TopicPostTwo/TopicPostTwo';
 import { TopicPostThree } from './TopicPostThree/TopicPostThree';
-import SidebarDetails from 'components/HomepageLayout/SisebarDetails/SidebarDetails';
 import { InviteCard } from 'components/HomepageLayout/InviteCard/InviteCard';
 import { SideAdvertisement } from 'components/HomepageLayout/Sisebaraddvertisement/SideAdvertisement';
 import { Footer } from 'components/commoncomponent/FooterLayout/Footer';
 import { Navigation } from 'components/commoncomponent/Navigation/Navigation';
+import { RightSidebar } from 'components/NewHomePage/RightSidebar/RightSidebar';
 
 export const TopicDetails = () => {
     return (
@@ -59,7 +59,7 @@ export const TopicDetails = () => {
                         </section>
                     </div>
                     <div className="col-md-3">
-                    <SidebarDetails/>
+                    <RightSidebar/>
                     <InviteCard/>
                     <SideAdvertisement/>
                     </div>

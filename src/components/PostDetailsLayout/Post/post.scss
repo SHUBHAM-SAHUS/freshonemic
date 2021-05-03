@@ -40,21 +40,52 @@ section .section-body #topheader .row .col-md-10 .float-right .dropdown-post{pos
     font-weight: 500;
     line-height: 42px;
     padding: 0 27px;
+    float: right;
     border: none;
     text-transform: uppercase;
 }
 .btn_outline_create{
+    color: black !important;
     line-height: 23px;
     text-transform: uppercase;
     padding-left: 18px;
     padding-right: 18px;
+    float: right;
     border-color: #2291BF;
     border-width: 2px;
+}
+.btn_outline_create:hover{
+    color: #fff !important;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-language{
+    float: right;
 }
 
 @media only screen and (max-width: 576px) {
 .btn_outline_follow{
-    line-height: 40px;
-    padding: 0 20px;
+    line-height: 35px;
+    padding: 0 12px;
+    
+    float: left;
+}
+.btn_outline_create{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    float: left;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+.dropdowncross{
+    height: 22px;
+    width: 22px;
+}
+.btn-language{
+    float: none;
+    margin-top: 3px;
 }
 }
+

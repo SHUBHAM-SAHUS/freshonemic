@@ -27,5 +27,9 @@
 }
 
 .footer_li_a{
-    font-size:13px; color: #E1E4EC; line-height:25px 
+    font-size:13px; color: #E1E4EC; line-height:25px;
+}
+.footer_li_a:hover{
+    color: #E1E4EC;
+    text-decoration: none;
 }

@@ -17,20 +17,16 @@ export const TopHeader = () => {
                 </div>
                 <div className="col-md-10 col-12">
                     <span className="float-right pt-3">
-                        <a href ="/" className="btn btn-round btn-outline-primary bg-white font_12 mr-2"> <b>Follow</b></a>
+                        <a href ="/" className="btn btn-round btn-topic-topheader bg-white font_12 mr-2"> <b>Follow</b></a>
                         <a href ="/"><img src={whiteCircleBtn} alt className="ml-3" /></a>
                         {/* User Dropdown */}
                         <Dropdown>
                             <Dropdown.Toggle className="dropdown-btn" id="dropdown-basic">
                                 <img src={threeDots} />
                             </Dropdown.Toggle>
-
                             <Dropdown.Menu className="dropdown_menu pl3">
                                 <Dropdown.Item className="dropdown-item pt-4"><img src={share1} className="pl-3 pr-3"/><span>Share</span></Dropdown.Item>
-                                
-
-                                <Dropdown.Item className="dropdown-item pt-4" ><img src={repost1} className="pl-3 pr-3"/><span>Share</span></Dropdown.Item>
-                                
+                                <Dropdown.Item className="dropdown-item pt-4" ><img src={repost1} className="pl-3 pr-3"/><span>Share</span></Dropdown.Item>                                
                             </Dropdown.Menu>
                         </Dropdown>
                         {/*//*/}
@@ -38,10 +34,10 @@ export const TopHeader = () => {
                     <h5 className="text-white pt-3 mb-4">What weird food combinations do you<br /> really enjoy?</h5>
                     <ul className="list-unstyled list-left">
                         <li className="pl-0">
-                            <small>FOLLOWERS <span className="font-white font-semibold pl-3">220</span></small>
+                            <small className="font-12 topic_topheader_follower font-semibold">FOLLOWERS <span className="font_white pl-3">220</span></small>
                         </li>
                         <li>
-                            <small>POST <span className="font-white font-semibold pl-3">18</span></small>
+                            <small className="font-12 topic_topheader_post font-semibold">POST <span className="font_white pl-3">18</span></small>
                         </li>
                     </ul>
                 </div>

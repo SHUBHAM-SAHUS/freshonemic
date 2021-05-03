@@ -18,20 +18,20 @@ export const Footer = () => {
         <div className="row clearfix footer_color">
           <div className="col-md-4">
             <ul className="footer_ul">
-              <li><a   className="footer_li_a"  >About Storiyoh OneMic</a></li>
-              <li><a  className="footer_li_a"> FAQ's </a></li>
+              <li><a href="#" className="footer_li_a"  >About Storiyoh OneMic</a></li>
+              <li><a href="#" className="footer_li_a"> FAQ's </a></li>
             </ul>
           </div>
           <div className="col-md-4">
             <ul className="footer_ul">
-              <li><a  className="footer_li_a" >Terms of Use</a></li>
-              <li><a   className="footer_li_a">Privacy Policy</a></li>
+              <li><a href="#" className="footer_li_a" >Terms of Use</a></li>
+              <li><a href="#"  className="footer_li_a">Privacy Policy</a></li>
             </ul>
           </div>
           <div className="col-md-4">
             <ul  className="footer_ul">
-              <li><a  className="footer_li_a">Moderator Policy</a></li>
-              <li><a   className="footer_li_a">Help &amp; Support</a></li>
+              <li><a href="#" className="footer_li_a">Moderator Policy</a></li>
+              <li><a href="#"  className="footer_li_a">Help &amp; Support</a></li>
             </ul>
           </div>
         </div>

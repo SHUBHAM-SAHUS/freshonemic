@@ -16,6 +16,7 @@ import { TopicModal } from '../Modal/TopicModal'
 import { PostModal } from '../PostModal/PostModal'
 import { useLocation,useHistory } from "react-router-dom"
 
+
 export const Navigation = () => {
   const location = useLocation();
   const history = useHistory();
@@ -28,6 +29,8 @@ export const Navigation = () => {
        {location.pathname === `/landing` ? (
                <div> vhvh</div>
               ) : 
+
+
 
       <Navbar collapseOnSelect expand="lg" className="shadow">
         <Sidebar />
@@ -49,6 +52,7 @@ export const Navigation = () => {
                 <p className="dropdown_p">Share a post on your OneMic feed</p>
               </div>
             </NavDropdown>
+            
             <Nav.Link href="#notification" className="nav_padding">< NotificationsIcon /></Nav.Link>
 
             <NavDropdown className="nav_padding" title={<FaRegUser />} id="collasible-nav-dropdown">

@@ -12,17 +12,17 @@ import { WhyOneMic } from './Whyonemic/WhyOneMic'
 export const LandingPageLayout = () => {
     return (
         <div>
-             <div> 
- 
-     <LandingpageHeader/> 
-     <SliderLayout/> 
-     <WhyOneMic/>
-     <AboutOneMic/>
-     <ExperienceOneMic/>
-     <AccordianLayout/>
-<Footer/>
-         
-             </div>
+            <div>
+
+                <LandingpageHeader />
+                <SliderLayout />
+                <WhyOneMic />
+                <AboutOneMic />
+                <ExperienceOneMic />
+                <AccordianLayout />
+                <Footer />
+
+            </div>
 
         </div>
     )

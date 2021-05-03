@@ -70,3 +70,12 @@ section .section-header small a {
     height: 3px;
     left: 23%;
 }
+
+@media only screen and (max-width: 576px) {
+    .dropdown-menu.filterdropdown {
+    right: auto !important;
+    top: 20% !important;
+    min-width: 18rem;
+}
+
+}
