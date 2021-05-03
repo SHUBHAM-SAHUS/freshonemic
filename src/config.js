@@ -9,7 +9,7 @@ export const BASE_URL = () => {
   let url = "https://www.humlogjobs.com/api/api";
 
   if (process.env.REACT_APP_ENV === "staging") {
-    url = "https://www.humlogjobs.com/api/api";
+    url = "https://dev-openmic-backend.storiyoh.com";
   }
   if (process.env.REACT_APP_ENV === "production") {
     console.log("production if");
@@ -17,7 +17,7 @@ export const BASE_URL = () => {
   }
   return url;
 };
-export const API_VIRSION = "/api";
+export const API_VIRSION = "/users";
 
 const instance = axios.create({
   baseURL: BASE_URL(),
