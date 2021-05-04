@@ -57,3 +57,28 @@ button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
 .rec-image{
   width: 150px;
 }
+.btn_carousel_follow{
+  background: #2392c0;
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  float: left;
+  line-height: 38px;
+  padding: 0 27px;
+  border: none;
+  text-transform: uppercase;
+}
+.btn-carousel_create{
+  color: black !important;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding-left: 8px;
+  padding-right: 8px;
+  float: left !important;
+  border-color: #2291BF;
+  border-width: 2px;
+}
+.dropdowncross_carousel{
+  width: 20px;
+  height: 20px;
+}

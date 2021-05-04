@@ -1,0 +1,20 @@
+#leftSidebar .sidebarlink li a {
+    font-size: 14px;
+    color: #fff;
+    line-height: 48px;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+#leftSidebar .sidebarlink li.selected a {
+    color: #2391bf;
+    background: #1A2032;
+}
+#leftSidebar .sidebarlink li a img {
+    margin-right: 10px;
+}
+.visitor_a:hover{
+    text-decoration: none;
+}

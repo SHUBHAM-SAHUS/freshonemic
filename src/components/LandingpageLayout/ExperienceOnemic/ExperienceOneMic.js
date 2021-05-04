@@ -19,10 +19,10 @@ export const ExperienceOneMic = () => {
         <h2 className="section-heading mb-4 mt-4">Experience OneMic App On Mobile</h2>
         <p className="mb-4 text_body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         <a href="#" title="Google Play Store">
-          <img src={gplaylebtn} alt="gplay" />&nbsp;
+          <img className="mb-2" src={gplaylebtn} alt="gplay" />&nbsp;
         </a>
         <a href="#" title="Apple Store">
-          <img src={applebtn} alty="apple" />
+          <img className="mb-2" src={applebtn} alty="apple" />
         </a>
       </div>
     </div>
