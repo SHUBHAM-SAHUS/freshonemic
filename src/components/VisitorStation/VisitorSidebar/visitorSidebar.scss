@@ -17,4 +17,9 @@
 }
 .visitor_a:hover{
     text-decoration: none;
+}.card {
+    border: none;
+    border-radius: 12px;
 }
+.profile-card-2 .card-img-block{float:left;width:100%;height:auto;overflow:hidden;}
+.profile-card-2 .card-img-block .figure{position: relative;}
