@@ -8,6 +8,7 @@ import { LandingPageLayout } from "components/LandingpageLayout/LandingPageLayou
 import { UserSignupPage } from "components/Signuppage/UserSignupPage";
 import { VerifyPage } from "components/VerifyPage/VerifyPage";
 import { Recommendations } from "componenttwo/RecomendationLayout/recommendationmainpage/Recommendations";
+import { VisitorStation } from "components/VisitorStation/VisitorStation";
 
 <UserSignupPage/>
 
@@ -73,6 +74,13 @@ export const publicRoutes = [
     component: Recommendations,
     exact: true,
   },
+  {
+    key: "visitorstation",
+    path: "/visitor-station",
+    component: VisitorStation,
+    exact: true,
+  },
+  
 
 
 

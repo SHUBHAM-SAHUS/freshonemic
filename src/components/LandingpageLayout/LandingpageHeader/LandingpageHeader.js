@@ -44,9 +44,9 @@ export const LandingpageHeader = () => {
             <Nav.Link href="/" className="text_light mx-3">Contact</Nav.Link>
             </LinkContainer> */}
             <LinkContainer to="/">
-            <Nav.Link className="btn_header_landing mx-3" onClick={() =>
+            <Nav.Link className="btn_header_landing mx-3 mb-2" onClick={() =>
               handelModal(<div> <TabComponent/>  </div>)
-            }>SIGN IN</Nav.Link>
+            }>Sign In</Nav.Link>
                </LinkContainer>
           </Nav>
 
