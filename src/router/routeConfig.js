@@ -9,6 +9,8 @@ import { UserSignupPage } from "components/Signuppage/UserSignupPage";
 import { VerifyPage } from "components/VerifyPage/VerifyPage";
 import { Recommendations } from "componenttwo/RecomendationLayout/recommendationmainpage/Recommendations";
 import { VisitorStation } from "components/VisitorStation/VisitorStation";
+import { SignUp } from "components/SignUp/SignUp";
+import { LoginPage } from "components/LoginPage/LoginPage";
 
 <UserSignupPage/>
 
@@ -63,10 +65,15 @@ export const publicRoutes = [
   {
     key: "signuppage",
     path: "/signup",
-    component: UserSignupPage,
+    component: SignUp,
     exact: true,
   },
-
+  {
+    key: "signinpage",
+    path: "/signin",
+    component: LoginPage,
+    exact: true,
+  },
    
   {
     key: "recommended",

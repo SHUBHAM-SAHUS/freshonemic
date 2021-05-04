@@ -1,5 +1,6 @@
 import React from 'react'
 import "./sliderstyle.css"
+import { Link } from "react-router-dom"
 import backgroundone from "../../../../assets/images/black.jpg"
 
 export const SliderItemone = (props) => {
@@ -16,7 +17,7 @@ export const SliderItemone = (props) => {
     <p>Ready for a whole new world of <a href="#">Storytelling?</a> Enter your email or mobile number to start your journey.</p>
     <form className="form-inline justify-content-center mt-5">
       <input type="text" name="email" placeholder="Enter Email or Mobile Number" className="mr-3 getstarted" />
-      <button type="submit" className="btn btn-primary-gradiant btn-getstarted">Get Started</button>
+      <Link to="signup"><button type="submit" className="btn btn-primary-gradiant btn-getstarted">Get Started</button></Link>
     </form>
   </div>{/* End Well */}
 </div>
