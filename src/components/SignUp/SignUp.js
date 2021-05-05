@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { isEmpty } from 'lodash';
+import { signUpRequestUser } from '../../redux/actions/SigupAction/SignUpAction';
+import { string_regex } from '../../utils/extra';
 import signupBtn from 'assets/images/signup-btn.png';
 import {
+  CHECKBOX_TYPE,
   CONFIRM_PASSWORD,
   CONFIRM_PASSWORD_KEY,
   EMAIL,
   EMAIL_OR_PHONE,
   INVITE_CODE,
   INVITE_CODE_KEY,
+  INVALID,
   IS_AGREE_TERMS_AND_CONDITION,
   NAME,
   PASSWORD,
+  REQUIRED,
   SIGN_UP,
+  TEXT_TYPE,
 } from '../../constants';
 import './signUp.scss';
 
@@ -24,6 +32,14 @@ export class SignUp extends Component {
       confirmPassword: '',
       inviteCode: '',
       isAgreeTermsAndCondition: false,
+      error: {
+        nameErr: '',
+        emailErr: '',
+        passwordErr: '',
+        confirmPasswordErr: '',
+        isAgreeTermsAndConditionErr: '',
+        inviteCodeErr: '',
+      },
     };
   }
 
@@ -58,11 +74,7 @@ export class SignUp extends Component {
     });
   };
 
-  submitSignUpForm = () => {
-    const { name, email, password, confirmPassword, inviteCode } = this.state;
-  };
-
-  render() {
+  validateData = () => {
     const {
       name,
       confirmPassword,
@@ -71,6 +83,71 @@ export class SignUp extends Component {
       inviteCode,
       isAgreeTermsAndCondition,
     } = this.state;
+    let error = {
+      nameErr: '',
+      emailErr: '',
+      passwordErr: '',
+      confirmPasswordErr: '',
+      isAgreeTermsAndConditionErr: '',
+      inviteCodeErr: '',
+    };
+    error = { ...this.state.error };
+    if (isEmpty(name)) {
+      error.nameErr = REQUIRED;
+    }
+    if (!!name && !string_regex.test(name)) {
+      error.nameErr = INVALID;
+    }
+    if (isEmpty(confirmPassword)) {
+      error.confirmPasswordErr = REQUIRED;
+    }
+    if (isEmpty(password)) {
+      error.passwordErr = REQUIRED;
+    }
+    if (isEmpty(inviteCode)) {
+      error.inviteCodeErr = REQUIRED;
+    }
+    if (isEmpty(email)) {
+      error.emailErr = REQUIRED;
+    }
+    if (!isAgreeTermsAndCondition) {
+      error.isAgreeTermsAndConditionErr = REQUIRED;
+    }
+    if (
+      !!error?.isAgreeTermsAndConditionErr ||
+      !!error?.emailErr ||
+      !!error?.inviteCodeErr ||
+      !!error?.passwordErr ||
+      !!error?.confirmPasswordErr ||
+      !!error?.nameErr
+    ) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+
+  submitSignUpForm = (e) => {
+    e.preventDefault();
+    const isValid = this.validateData();
+    if (!isValid) {
+      return;
+    } else {
+      // this.props.signUpRequestUser(this.state);
+    }
+  };
+
+  render() {
+    const {
+      name,
+      confirmPassword,
+      email,
+      error,
+      inviteCode,
+      isAgreeTermsAndCondition,
+      password,
+    } = this.state;
+
     return (
       <>
         <div className='signup_header pt-3'>
@@ -84,7 +161,7 @@ export class SignUp extends Component {
               <div className='col-lg-6'>
                 <label>{NAME}</label>
                 <input
-                  type='text'
+                  type={TEXT_TYPE}
                   name={NAME.toLowerCase()}
                   value={name}
                   className='form-control'
@@ -95,7 +172,7 @@ export class SignUp extends Component {
               <div className='col-lg-6'>
                 <label>{EMAIL_OR_PHONE}</label>
                 <input
-                  type='text'
+                  type={TEXT_TYPE}
                   name={EMAIL}
                   value={email}
                   className='form-control'
@@ -108,7 +185,7 @@ export class SignUp extends Component {
               <div className='col-lg-6'>
                 <label>{PASSWORD}</label>
                 <input
-                  type='password'
+                  type={PASSWORD.toLowerCase()}
                   name={PASSWORD.toLowerCase()}
                   value={password}
                   className='form-control'
@@ -119,7 +196,7 @@ export class SignUp extends Component {
               <div className='col-lg-6'>
                 <label>{CONFIRM_PASSWORD}</label>
                 <input
-                  type='password'
+                  type={PASSWORD.toLowerCase()}
                   name={CONFIRM_PASSWORD_KEY}
                   value={confirmPassword}
                   className='form-control'
@@ -132,7 +209,7 @@ export class SignUp extends Component {
               <div className='col-lg-6'>
                 <label>{INVITE_CODE}</label>
                 <input
-                  type='text'
+                  type={TEXT_TYPE}
                   name={INVITE_CODE_KEY}
                   value={inviteCode}
                   className='form-control'
@@ -144,7 +221,7 @@ export class SignUp extends Component {
                 <label />
                 <div className='form-check'>
                   <input
-                    type='checkbox'
+                    type={CHECKBOX_TYPE}
                     name={IS_AGREE_TERMS_AND_CONDITION}
                     value={isAgreeTermsAndCondition}
                     className='form-check-input'
@@ -165,22 +242,20 @@ export class SignUp extends Component {
               </div>
             </div>
             <div className='form-group text-center mt-4'>
-              <a
+              <button
                 className='btn-signin my-2 my-sm-0'
-                type='submit'
                 title='Sign Up'
-                href='/#'
                 onClick={this.submitSignUpForm}
               >
                 <img src={signupBtn} alt='Sign-up' />
-              </a>
+              </button>
             </div>
             <div className='form-group text-center mt-4'>
               <p className='text-dark'>
                 Already have an account?{' '}
-                <a className='signup_a' href='/#' title='Sign In'>
+                <button className='signup_a' title='Sign In'>
                   Sign In
-                </a>
+                </button>
               </p>
             </div>
           </form>
@@ -190,4 +265,4 @@ export class SignUp extends Component {
   }
 }
 
-export default SignUp;
+export default connect(null, { signUpRequestUser })(SignUp);

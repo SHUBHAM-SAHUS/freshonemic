@@ -9,3 +9,7 @@ export const CONFIRM_PASSWORD_KEY = 'confirmPassword';
 export const INVITE_CODE_KEY = 'inviteCode';
 export const EMAIL = 'email';
 export const IS_AGREE_TERMS_AND_CONDITION = 'isAgreeTermsAndCondition';
+export const TEXT_TYPE = 'text';
+export const CHECKBOX_TYPE = 'checkbox';
+export const REQUIRED = 'Required';
+export const INVALID = 'Invalid';
