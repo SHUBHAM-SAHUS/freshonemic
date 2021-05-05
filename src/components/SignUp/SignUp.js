@@ -4,20 +4,29 @@ import './../NewHomePage/newHome.scss'
 import signupBtn from 'assets/images/signup-btn.png'
 import { Footer } from 'components/commoncomponent/FooterLayout/Footer';
 import { Link } from 'react-router-dom'
-
+import { Navbar, Nav, Form, Button } from "react-bootstrap"
+import logo from "assets/images/logo.png"
 
 export const SignUp = () => {
   return (
-    <div>
+    <>
+
       <section className="main">
+
         <div className="container-fluid">
-          <div className="row signup_main mt-4 mb-4">
-            <div className="col-lg-12 col-12">
+
+          <div className="row signup_main mb-4">
+            <div className="col-lg-12 col-12 ">
+              <Navbar className="nav-fixed" bg="dark" expand="lg px-3 fixed-top ">
+
+                <Navbar.Brand href="/"> <img src={logo} /></Navbar.Brand>
+
+              </Navbar>
               <div className="signup_header pt-3">
                 <h5 className="signup_title text-center" >
                   <span className="">Sign Up</span></h5>
               </div>
-              <div className="modal-body mt-4">
+              <div className="mt-4">
                 <form>
                   <div className="form-group row">
                     <div className="col-lg-12">
@@ -69,7 +78,8 @@ export const SignUp = () => {
         </div>
         <Footer />
       </section>
-     
-    </div>
+
+    </>
+
   )
 }

@@ -74,7 +74,12 @@ export const publicRoutes = [
     component: LoginPage,
     exact: true,
   },
-   
+  {
+    key: "verifypage",
+    path: "/verify",
+    component: VerifyPage,
+    exact: true,
+  },
   {
     key: "recommended",
     path: "/recommendations",
