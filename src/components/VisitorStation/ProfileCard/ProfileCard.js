@@ -1,4 +1,5 @@
 import React from 'react'
+import bg1 from 'assets/images/profile-bg1.png'
 
 export const ProfileCard = () => {
     return (
@@ -7,7 +8,7 @@ export const ProfileCard = () => {
                 <div className="col-md-12">
                     <div className="card profile-card-2">
                         <div className="card-img-block">
-                            <figure className="figure h-100"> <img className="img-fluid" src="images/profile-bg1.png" alt="Card image cap" />
+                            <figure className="visitor-station_bg"> <img className="" style={{width: "100%"}} src={bg1} alt="Card image cap" />
                                 <figcaption className="text-center">
                                     <div className="d-flex offset-md-2">
                                         <h2 className="mr-auto ml-3">Doeband&amp;co</h2>

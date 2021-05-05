@@ -8,7 +8,8 @@ import p11 from "assets/images/p11.png"
 
 export const VisitorSidebar = () => {
     return (
-        <div id="leftSidebar">
+        <div className="row" id="leftSidebar">
+       
             <div className="widget-section blue-bg col-md-12 pt-4">
                 <section>
                     <ul className="list-unstyled sidebarlink text-uppercase">
