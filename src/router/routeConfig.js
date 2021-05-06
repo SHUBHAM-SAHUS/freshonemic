@@ -13,17 +13,11 @@ import { SignUp } from "components/SignUp/SignUp";
 import { LoginPage } from "components/LoginPage/LoginPage";
 import { ForgotPage } from "components/ForgotPage/ForgotPage";
 
-<UserSignupPage/>
 
 //private routes
 
 export const publicRoutes = [
-  // {
-  //   key: "home",
-  //   path: "/",
-  //   component: Home,
-  //   exact: true,
-  // },
+
   {
     key: "newhome",
     path: "/home",
@@ -100,6 +94,14 @@ export const publicRoutes = [
     exact: true,
   },
   
+  {
+    key: "mystationuser",
+    path: "/mystation",
+    component: MyStationProfile,
+    exact: true,
+  },
+  
+
 
 
 

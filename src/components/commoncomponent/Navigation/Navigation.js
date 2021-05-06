@@ -32,7 +32,7 @@ export const Navigation = () => {
 
 
 
-      <Navbar collapseOnSelect expand="lg" className="shadow">
+      <Navbar collapseOnSelect expand="lg" className="shadow fixed-top" style={{backgroundColor:"#fff"}}>
         <Sidebar />
         <Navbar.Brand href="#home"> <img className="nav_logo" src={logo} alt="logo" /> </Navbar.Brand>
         <form className="form-inline my-2 my-lg-0 search-form">
