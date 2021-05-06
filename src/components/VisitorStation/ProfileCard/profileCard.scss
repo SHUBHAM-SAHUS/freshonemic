@@ -1,6 +1,18 @@
+section .section-header .sec-heading.line-width60:after{width:60%}
+section .section-header .sec-heading.line-width70:after{width:70%}
+.btn-giverecom{line-height: 40px !important; padding: 0 20px}
 .card{border:none;border-radius: 12px}
 .profile-card-2 .card-img-block{float:left;width:100%;height:auto;overflow:hidden;}
 .profile-card-2 .card-img-block .figure{position: relative;}
 .visitor-station_bg {width: 100%;}
-figure.figure.h-100 .img-fluid {width: 100%;}
+figure.figure.h-100 .img-fluid {width: 100%;position: relative;}
+.profile-card-2 .card-img-block .figure figcaption{position: absolute;color: #fff;top:65%;width: 100%}
 .img_bg1{width: 100% !important;}
+.profile {border-radius:50%;position:absolute;top:31%;left:10%;max-width:152px;
+    -webkit-transform: translate(-50%, 0%);transform: translate(-50%, 0%);}
+    .profile-card-2 ul.feedback li{color:#21283e;float: left;border-right: #E4E4E4;font-size: 14px;border-right: 1px solid #CECECE;padding-left:30px; padding-right: 30px } 
+    .profile-card-2 ul.feedback{float:right}
+    .profile-card-2 ul.feedback li:last-child{border:none;}
+    .profile-card-2 ul.feedback li span{font-size: 24px;clear: both;width: 100%;display: block;text-align: center;font-weight:700;color:#2391bf}
+    .profile-card-2 h3.card-title {font-weight:600;color:#21283e;margin-bottom: 12px}
+.profile-card-2 h5.sub-title{color:#556187;font-size: 16px; margin-top: 0}

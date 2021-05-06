@@ -1,11 +1,8 @@
-.signin_main_container{
-    margin: auto;
-    width: 50%;
+.signin_main_container{    
     border: 2px solid #2291be;
     box-shadow: 0 0 0 0.2rem #007bff40;
     border-radius: 25px;
-    margin-top: 80px;
-    height: auto;
+    margin-top: 100px;
 }
 
 .signin_main{
@@ -31,7 +28,8 @@
     color: #21283e;
     font-weight: 700;
     text-align: center !important;
-}.signin_title span:after {
+}
+.signin_title span:after {
     background-color: #D716A5;
     padding: 0 20px;
     content: " ";

@@ -15,8 +15,8 @@ export const SignUp = () => {
 
         <div className="container-fluid">
 
-          <div className="row signup_main mb-4">
-            <div className="col-lg-12 col-12 ">
+          <div className="row">
+            <div className="col-lg-6 offset-lg-3 signup_main mb-4">
               <Navbar className="nav-fixed" bg="dark" expand="lg px-3 fixed-top ">
 
                 <Navbar.Brand href="/"> <img src={logo} /></Navbar.Brand>
@@ -26,42 +26,40 @@ export const SignUp = () => {
                 <h5 className="signup_title text-center" >
                   <span className="">Sign Up</span></h5>
               </div>
-              <div className="mt-4">
+              <div className="mt-4 modal-body">
                 <form>
-                  <div className="form-group row">
-                    <div className="col-lg-12">
+                  <div className="form-group">
+                   
                       <label>Name</label>
                       <input type="text" name="name" className="form-control" placeholder="Enter your name" />
                     </div>
-                    <div className="col-lg-12">
+                    <div className="form-group">
                       <label>Email or Phone</label>
                       <input type="text" name="email" className="form-control" placeholder="Enter Email or Phone" />
                     </div>
-                  </div>
-                  <div className="form-group row">
-                    <div className="col-lg-12">
+                  
+                  <div className="form-group">
+                   
                       <label>Password</label>
                       <input type="password" name="email" className="form-control" placeholder="Enter Password" />
                     </div>
-                    <div className="col-lg-12">
+                    <div className="form-group">
                       <label>Confirm Password</label>
                       <input type="password" name="email" className="form-control" placeholder="Enter Password" />
-                    </div>
+                   
                   </div>
-                  <div className="form-group row mb-5">
-                    <div className="col-lg-12">
+                  <div className="form-group mb-5">
+                    
                       <label>Invite Code</label>
                       <input type="text" name="email" className="form-control" placeholder="Enter Invite Code" />
                     </div>
-                    <div className="col-lg-12">
-                      <label />
+
+                    <div className="form-group">                      
                       <div className="form-check">
                         <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                         <label className="form-check-label" htmlFor="exampleCheck1">By creating an account, you agree to our <a className="signup_a" href="#">Terms of use</a></label>
                       </div>
                     </div>
-                  </div>
-
                   <div className="form-group text-center mt-4">
                     <a className="btn-signin my-2 my-sm-0" type="submit" title="Sign Up"><img src={signupBtn} /></a>
                   </div>
@@ -76,9 +74,9 @@ export const SignUp = () => {
             </div>
           </div>
         </div>
-        <Footer />
+        
       </section>
-
+      <Footer />
     </>
 
   )

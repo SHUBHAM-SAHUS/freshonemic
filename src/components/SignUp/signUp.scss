@@ -1,11 +1,8 @@
 .signup_main{
-    margin: auto;
-    width: 50%;
     border: 2px solid #2291be;
     box-shadow: 0 0 0 0.2rem #007bff40;
     border-radius: 25px;
-    margin-top: 80px;
-    height: 100ch;
+    margin-top: 100px;   
 }
 .signup_header{
     width: 100%;
@@ -40,20 +37,4 @@
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem #007bff40;
-}
-
-@media only screen and (max-width: 768px){
-    .signup_main{
-        margin: auto;
-        margin-top: 80px;
-        width: 70%;
-    }
-}
-
-@media only screen and (max-width: 576px){
-    .signup_main{
-        margin: auto;
-        margin-top: 80px;
-        width: 100%;
-    }
 }

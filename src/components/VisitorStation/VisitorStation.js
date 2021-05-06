@@ -23,6 +23,8 @@ export const VisitorStation = () => {
                     <div className= "col-md-10 col-12 pt-5">
                         <ProfileCard/>
                     </div>
+                    
+
                     {/* main content end*/}
                     </div>
                 </div>

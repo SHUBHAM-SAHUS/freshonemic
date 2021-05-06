@@ -11,6 +11,7 @@ import { Recommendations } from "componenttwo/RecomendationLayout/recommendation
 import { VisitorStation } from "components/VisitorStation/VisitorStation";
 import { SignUp } from "components/SignUp/SignUp";
 import { LoginPage } from "components/LoginPage/LoginPage";
+import { ForgotPage } from "components/ForgotPage/ForgotPage";
 
 <UserSignupPage/>
 
@@ -78,6 +79,12 @@ export const publicRoutes = [
     key: "verifypage",
     path: "/verify",
     component: VerifyPage,
+    exact: true,
+  },
+  {
+    key: "forgotpassword",
+    path: "/forgot-password",
+    component: ForgotPage,
     exact: true,
   },
   {
