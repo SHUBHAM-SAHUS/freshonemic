@@ -12,6 +12,8 @@ import { VisitorStation } from "components/VisitorStation/VisitorStation";
 import { SignUp } from "components/SignUp/SignUp";
 import { LoginPage } from "components/LoginPage/LoginPage";
 import { ForgotPage } from "components/ForgotPage/ForgotPage";
+import { MyStationProfile } from "componenttwo/mystationpage/MyStationMainPage/MyStationProfile";
+
 
 
 //private routes
