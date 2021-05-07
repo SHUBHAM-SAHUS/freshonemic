@@ -16,7 +16,7 @@ export const SignUp = () => {
         <div className="container-fluid">
 
           <div className="row">
-            <div className="col-lg-6 offset-lg-3 signup_main mb-4">
+            <div className="col-lg-4 offset-lg-4 signup_main mb-4">
               <Navbar className="nav-fixed" bg="dark" expand="lg px-3 fixed-top ">
 
                 <Navbar.Brand href="/"> <img src={logo} /></Navbar.Brand>

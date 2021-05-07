@@ -11,7 +11,7 @@ export const VerifyPage = () => {
             <section className="main">
                 <div className="container-fluid">
                     <div className="row ">
-                        <div className="col-lg-6 offset-lg-3 col-12 verify_main_container">
+                        <div className="col-lg-4 offset-lg-4 col-12 verify_main_container">
                             <Navbar className="nav-fixed" bg="dark" expand="lg px-3 fixed-top">
                                 <Navbar.Brand href="/"> <img src={logo} /></Navbar.Brand>
                             </Navbar>

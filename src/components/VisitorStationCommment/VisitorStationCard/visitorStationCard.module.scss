@@ -1,0 +1,9 @@
+.card.comments-list-card{border-radius: 15px}
+.card.comments-list-card .media .media-body .delete{position: absolute;right: 15px;display: inline-block;
+    cursor: pointer;z-index: 99}
+.article_title{font-size:16px;color:#8b92ab;line-height:1.2 }
+.article_title span{color:#2391bf;}
+.card.comments-list-card .media .media-body .article_body p{font-size: 16px;color: #21283e;margin-bottom: 15px;line-height: 1.5;font-weight: 500}
+.card.comments-list-card .media .media-body p.author{font-size: 14px;color:#8a95b6;}
+.card.comments-list-card .media .media-body p.author .authername{color:#2391bf }
+.delete{padding: 5px 5px;}
