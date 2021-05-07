@@ -3,6 +3,7 @@ import './verifyPage.scss';
 import submitBtn from 'assets/images/submit2-btn.png'
 import { Navbar, Nav, Form, Button } from "react-bootstrap"
 import logo from "assets/images/logo.png"
+import OtpInput from "react-otp-input";
 import { Footer } from 'components/commoncomponent/FooterLayout/Footer';
 
 export const VerifyPage = () => {
@@ -23,15 +24,11 @@ export const VerifyPage = () => {
                                 <form>
                                     <div className="form-group text-18 mt-3" id="verifyCode">
                                         <label>Enter the OTP received on your registered Email ID/ Mobile Number</label><br />
-                                        {/* <input type="text" name="verificationCode" class="form-control" placeholder="Enter Email or Phone"> */}
-                                        {/**/}
-                                        <input className="verified" type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                                        <input className="verified" type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                                        <input className="verified" type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                                        <input className="verified" type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                                        <input className="verified" type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                                        <input className="verified" type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                                        {/*//*/}
+                                        <OtpInput
+          onChange={otp => console.log(otp)}
+          numInputs={6}
+          separator={<span>-</span>}
+        />
                                     </div>
                                     <div className="form-group text-center mt-5">
                                         <a className="btn-signin my-2 my-sm-0" type="submit"><img src={submitBtn} /></a>
