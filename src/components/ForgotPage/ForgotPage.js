@@ -150,7 +150,7 @@ export const ForgotPage = () => {
                       <img src={signinBtn} />
                     </a> */}
 
-                    <button className="btn-signin my-2 my-sm-0 bg-primary"> submit</button>
+                    <button className="btn_signup my-2 my-sm-0 bg-primary"> submit</button>
                   </div>
                   <div className="form-group text-center text-18">
                     <a className="forgot_a" href="#">

@@ -57,3 +57,17 @@
       widows: 100%;
      
 }
+.btn_signup{
+    background: linear-gradient(
+        90deg
+        , #278bbb 0%, #3f6fae 50%, #5c4e9e 100%);
+            border: none;
+            color: #fff !important;
+            padding: 0 29px !important;
+            line-height: 42px;
+            border-radius: 21px;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+}

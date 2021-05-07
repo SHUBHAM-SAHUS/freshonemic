@@ -27,11 +27,7 @@ export const PostModal = () => {
                 <Modal.Body>
                     <form>
                         <div className="form-group mt-5">
-                            {/* <select class="form-control">
-        <option data-thumbnail="images/topic-icon2.png"> Choose a topic</option>
-        <option>Choose a topic</option>
-        <option>Choose a topic</option>
-      </select> */}
+
                             <select id="id_select2_example" className="form-control">
                                 <option data-img src={topicIcon}> Choose a topic</option>
                                 <option data-img_src={topicIcon}> Choose a topic</option>
@@ -49,7 +45,7 @@ export const PostModal = () => {
                             <img src={voiceImage} className="img-fluid mb-4" />
                         </div>
                         <div className="form-group">
-                            <div className="row float-right pr-4">
+                            <div className="row pr-4">
                                 <div className="btn btn-round btn-outline-primary font-12  pl-4 pr-4">REMOVE</div>
                             </div>
                             <div className="row mt-5">

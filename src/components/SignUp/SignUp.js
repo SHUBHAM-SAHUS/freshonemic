@@ -127,7 +127,7 @@ export const SignUp = () => {
               })}
                
               />
-              <i className="eye"   onClick={togglePasswordVisiblity}>{ <BsEyeFill/>}</i>
+              <i className="eye" onClick={togglePasswordVisiblity}>{ <BsEyeFill/>}</i>
               </div>
               {errors.password && <p className="text-danger p-0 m-0">{errors.password.message}</p>}
              </div>
@@ -210,7 +210,7 @@ export const SignUp = () => {
                   {errors.isAdmin && <p className="text-danger p-0 m-0">{errors.isAdmin.message}</p>}
                   <div className="form-group text-center mt-4">
                     {/* <a className="btn-signin my-2 my-sm-0" type="submit" title="Sign Up"><img src={signupBtn} /></a> */}
-                    <button className="btn-signin my-2 my-sm-0 bg-primary">
+                    <button className="btn_signup my-2 my-sm-0 bg-primary">
                       {" "}
                       Sign Up{" "}
                     </button>

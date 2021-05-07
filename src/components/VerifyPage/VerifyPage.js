@@ -25,13 +25,13 @@ export const VerifyPage = () => {
                                     <div className="form-group text-18 mt-3" id="verifyCode">
                                         <label>Enter the OTP received on your registered Email ID/ Mobile Number</label><br />
                                         <OtpInput
-          onChange={otp => console.log(otp)}
-          numInputs={6}
-          separator={<span>-</span>}
-        />
+                                            onChange={otp => console.log(otp)}
+                                            numInputs={6}
+                                            separator={<span>-</span>}
+                                        />
                                     </div>
                                     <div className="form-group text-center mt-5">
-                                        <a className="btn-signin my-2 my-sm-0" type="submit"><img src={submitBtn} /></a>
+                                        <a className="btn_signup my-2 my-sm-0" type="submit"><img src={submitBtn} /></a>
                                     </div>
                                 </form>
                             </div>
@@ -39,7 +39,7 @@ export const VerifyPage = () => {
                     </div>
                 </div>
             </section>
-        <Footer/>
+            <Footer />
         </>
 
     )

@@ -90,7 +90,7 @@ export const LoginPage = () => {
                   <div className="form-group text-center mt-4">
                     {/* <a className="btn-signin my-2 my-sm-0" type="submit" title="Sign In"><img src={signinBtn} /></a> */}
                     <button
-                      className="btn-signin my-2 my-sm-0 bg-primary"
+                      className="btn_signup my-2 my-sm-0 bg-primary"
                       type="submit"
                     >
                       Login{" "}
