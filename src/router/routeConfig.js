@@ -15,10 +15,13 @@ import { ForgotPage } from "components/ForgotPage/ForgotPage";
 import { VisitorStationComment } from "components/VisitorStationCommment/VisitorStationComment";
 import { VisitorStationPost } from "components/VisitorStationPost/VisitorStationPost";
 import { VisitorStationTopic } from "components/VisitorStationTopic/VisitorStationTopic";
+import { Flaggedpage } from "componenttwo/Flaggedpage/Flaggedpage/Flaggedpage";
+import { PincomponentPage } from "componenttwo/Pinpagecomponent/Pincomponent/PincomponentPage";
+import { UpVotedPageComponent } from "componenttwo/UpVotedpage/UpVotedpageComponent/UpVotedPageComponent";
 
-<UserSignupPage/>
 
-//private routes
+
+
 
 export const publicRoutes = [
   {
@@ -114,6 +117,33 @@ export const publicRoutes = [
     component: VisitorStationTopic,
     exact: true,
   },
+
+  {
+    key: "flaggedpagee",
+    path: "/flagged",
+    component: Flaggedpage,
+    exact: true,
+  },
+  
+  {
+    key: "pincomponent",
+    path: "/pins",
+    component:PincomponentPage,
+    exact: true,
+  },
+
+  {
+    key: "upvoteds",
+    path: "/upvoted",
+    component:UpVotedPageComponent,
+    exact: true,
+  },
+
+
+
+  
+  
+
 ];
 
 export const privateRoutes = [];
