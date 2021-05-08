@@ -13,6 +13,8 @@ import { SignUp } from "components/SignUp/SignUp";
 import { LoginPage } from "components/LoginPage/LoginPage";
 import { ForgotPage } from "components/ForgotPage/ForgotPage";
 import { VisitorStationComment } from "components/VisitorStationCommment/VisitorStationComment";
+import { VisitorStationPost } from "components/VisitorStationPost/VisitorStationPost";
+import { VisitorStationTopic } from "components/VisitorStationTopic/VisitorStationTopic";
 
 <UserSignupPage/>
 
@@ -99,8 +101,19 @@ export const publicRoutes = [
     path: "/visitor-station-comment",
     component: VisitorStationComment,
     exact: true,
-  }
-  
+  },
+  {
+    key: "visitorstationpost",
+    path: "/visitor-station-post",
+    component: VisitorStationPost,
+    exact: true,
+  },
+  {
+    key: "visitorstationtopic",
+    path: "/visitor-station-topic",
+    component: VisitorStationTopic,
+    exact: true,
+  },
 ];
 
 export const privateRoutes = [];

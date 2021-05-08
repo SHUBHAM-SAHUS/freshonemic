@@ -15,7 +15,7 @@ export const Section = () => {
             <section className="main">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-2">
+                        <div className="col-md-2 col-12">
                             {/* Right Sidebar */}
                             <SectionRightSideBar />
                         </div>

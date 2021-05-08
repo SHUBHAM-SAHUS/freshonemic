@@ -13,8 +13,7 @@ import p11 from 'assets/images/p11.png';
 import './sectionRightSideBar.scss';
 
 export const SectionRightSideBar = () => {
-    return (
-        <div className="col-md-12">
+    return (        
             <div className="row">
                 <div className="widget-section blue-bg col-md-12 pt-4 ">
                     <section className="px-2">
@@ -33,7 +32,6 @@ export const SectionRightSideBar = () => {
                         </ul>
                     </section>
                 </div>
-            </div>
-        </div>
+            </div>        
     )
 }

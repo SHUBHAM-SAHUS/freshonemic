@@ -9,8 +9,8 @@ import { Post } from 'components/PostDetailsLayout/Post/Post';
 import banner2 from 'assets/images/banner-2.jpg';
 import banner3 from 'assets/images/banner-3.jpg';
 import { RightSidebar } from './RightSidebar/RightSidebar';
-import { InviteCard } from 'components/HomepageLayout/InviteCard/InviteCard';
-import { SideAdvertisement } from 'components/HomepageLayout/Sisebaraddvertisement/SideAdvertisement';
+import { InviteCard } from 'components/NewHomePage/InviteCard/InviteCard';
+import { SideAdvertisement } from 'components/NewHomePage/Sisebaraddvertisement/SideAdvertisement';
 import { Navigation } from 'components/commoncomponent/Navigation/Navigation';
 import { Footer } from 'components/commoncomponent/FooterLayout/Footer';
 

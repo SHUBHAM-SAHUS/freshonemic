@@ -1,0 +1,21 @@
+.alert_bg{
+    width: 21px;
+    height: 21px;
+    line-height: 18px;
+    text-align: center;
+    background: #FED6D6;
+    border-radius: 50%;
+    display: inline-block;
+}
+.btn_vs_create{
+    border-color: #bec4d9 !important;
+    opacity: .60;
+    line-height: 25px;
+    pointer-events: none;
+    padding-right: 18px;
+    padding-left: 18px;
+    text-transform: uppercase;
+}
+.btn_vs_create:focus{
+    box-shadow: none;
+}

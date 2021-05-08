@@ -31,7 +31,10 @@ export const VerifyPage = () => {
                                         />
                                     </div>
                                     <div className="form-group text-center mt-5">
-                                        <a className="btn_signup my-2 my-sm-0" type="submit"><img src={submitBtn} /></a>
+                                        <button className="btn_signup my-2 my-sm-0 bg-primary">
+                                            {" "}
+                                            Submit{" "}
+                                        </button>
                                     </div>
                                 </form>
                             </div>

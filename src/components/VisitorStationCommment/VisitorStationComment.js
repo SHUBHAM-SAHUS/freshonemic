@@ -19,7 +19,7 @@ export const VisitorStationComment = () => {
                         {/* main content */}
                         <div className="col-md-10 col-12 pt-5">
                             <div class="section-header">
-                                <h2 class="sec-heading visitor_station_comm float-left"><b>Comments</b></h2>
+                                <h2 class="sec-heading visitor_station_comm"><b>Comments</b></h2>
                             </div>
                             <section className="row">
                                 <div className="col-md-6 col-12">
