@@ -7,7 +7,7 @@ export const Footer = () => {
     return (
         <>
       <footer className="mainfooter ">
-  <div className="container-fluid ">
+  <div className="">
     <div className="row clearfix footer_color">
       <div className="col-md-3"> <a href="#"> <img src={footerlogo} alt="footerlogo" /> </a>
         <div className="copy-right mt-2">
